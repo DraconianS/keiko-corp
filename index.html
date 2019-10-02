@@ -5,12 +5,8 @@
 	<title>Keiko Corp</title>
 	<!--  App Description  -->
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
-
-	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />	
+	<link rel="stylesheet" type="text/css" href="css/main.css"/>	
 </head>
 <body>
 	<!--  Header Section  -->
@@ -241,22 +237,23 @@
 	<!--  End Footer Section  -->	
 	<script type="text/javascript" async>
 		const loadStyleSheet = (src) =>{
-        if (document.createStyleSheet) {
-        	document.createStyleSheet(src);
-        }
-        else {
-	        const stylesheet = document.createElement('link');
-	        stylesheet.href = src;
-	        stylesheet.rel = 'stylesheet';
-	        stylesheet.type = 'text/css';
-	        document.getElementsByTagName('head')[0].appendChild(stylesheet);
-        }
-    }      
-    	window.onload = function () {        
+	        if (document.createStyleSheet) {
+	        	document.createStyleSheet(src);
+	        }
+	        else {
+		        const stylesheet = document.createElement('link');
+		        stylesheet.href = src;
+		        stylesheet.rel = 'stylesheet';
+		        stylesheet.type = 'text/css';
+		        document.getElementsByTagName('head')[0].appendChild(stylesheet);
+	        }
+	    }      
+    	window.onload = function () {    	
+        	loadStyleSheet("css/bootstrap.css");
         	loadStyleSheet("css/animate.css");
         	loadStyleSheet("css/owl.transitions.css");
         	loadStyleSheet("css/owl.carousel.css");
-      };
+    	};
 	</script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/ajaxchimp.js"></script>
